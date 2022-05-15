@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SofjaApp.MainControllerNumberSystemsSofjaApp">
+   <children>
+  <AnchorPane layoutX="3.0" layoutY="1.0" minHeight="0.0" minWidth="0.0" prefHeight="664.0" prefWidth="1050.0">
+         <children>
+            <Pane fx:id="PaneNS1" layoutX="7.0" layoutY="44.0" prefHeight="234.0" prefWidth="1023.0" stylesheets="@style/SofjaMain.css">
+               <children>
+                  <Button fx:id="BtnRandomExampleNS" layoutX="24.0" layoutY="17.0" mnemonicParsing="false" onAction="#BtnRandomExampleNS" prefHeight="80.0" prefWidth="178.0" text="Random example">
+                     <font>
+                        <Font name="Ubuntu Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BtnConvertNS" layoutX="472.0" layoutY="16.0" mnemonicParsing="false" onAction="#BtnConvertNS" prefHeight="80.0" prefWidth="80.0" text="Convert">
+                     <font>
+                        <Font name="Ubuntu Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BtnClearAllNS" layoutX="567.0" layoutY="16.0" mnemonicParsing="false" onAction="#BtnClearAllNS" prefHeight="80.0" prefWidth="80.0" text="Clear all">
+                     <font>
+                        <Font name="Ubuntu Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BtnSortOutNS" layoutX="663.0" layoutY="16.0" mnemonicParsing="false" onAction="#BtnSortOutNS" prefHeight="80.0" prefWidth="87.0" text="Sort out">
+                     <font>
+                        <Font name="Ubuntu Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="TFInputNS" layoutX="23.0" layoutY="131.0" prefHeight="26.0" prefWidth="727.0">
+                     <font>
+                        <Font name="Ubuntu Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="TFOutputNS" layoutX="23.0" layoutY="191.0" prefHeight="26.0" prefWidth="727.0">
+                     <font>
+                        <Font name="Ubuntu Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="849.0" layoutY="189.0" prefHeight="30.0" prefWidth="73.0" text="Count">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TFNSCount" layoutX="757.0" layoutY="191.0" prefHeight="29.0" prefWidth="87.0">
+                     <font>
+                        <Font name="Ubuntu Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <ComboBox fx:id="comboBox1" layoutX="214.0" layoutY="16.0" prefHeight="25.0" prefWidth="148.0" promptText="Select a value" />
+                  <ComboBox fx:id="comboBox2" layoutX="214.0" layoutY="72.0" prefHeight="25.0" prefWidth="148.0" promptText="Select a value" />
+                  <Label layoutX="215.0" layoutY="43.0" text="to">
+                     <font>
+                        <Font name="Ubuntu Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="BtnSwitch" layoutX="377.0" layoutY="16.0" mnemonicParsing="false" onAction="#BtnSwitch" prefHeight="81.0" prefWidth="79.0" text="Switch">
+                     <font>
+                        <Font name="Ubuntu Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="23.0" layoutY="165.0" text="Result">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="104.0" text="Please enter a number here">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label> 
+               </children>
+            </Pane>
+            <Pane fx:id="PaneNSSolutionProcess" layoutX="6.0" layoutY="288.0" prefHeight="362.0" prefWidth="622.0" stylesheets="@style/SofjaMain.css">
+               <children>
+                  <Label fx:id="LNSSolutionProcess" layoutX="18.0" layoutY="1.0" prefHeight="41.0" prefWidth="582.0" text=" Solution path">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="TAOutputSPNU" layoutX="23.0" layoutY="42.0" prefHeight="309.0" prefWidth="582.0" scrollLeft="100.0">
+                     <font>
+                        <Font name="Monospaced Bold" size="14.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </Pane>
+            <Pane fx:id="PaneNSNumbersPad" layoutX="640.0" layoutY="288.0" prefHeight="362.0" prefWidth="390.0" stylesheets="@../../bin/fxml/style/SofjaMain.css">
+               <children>
+                  <Label fx:id="LNSNumbersPad" alignment="CENTER" prefHeight="42.0" prefWidth="155.0" text="Numeric pad" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="L7NS" layoutX="12.0" layoutY="54.0" mnemonicParsing="false" onAction="#L7NS" prefHeight="55.0" prefWidth="55.0" text="7">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="L8NS" layoutX="87.0" layoutY="54.0" mnemonicParsing="false" onAction="#L8NS" prefHeight="55.0" prefWidth="55.0" text="8">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="L9NS" layoutX="161.0" layoutY="54.0" mnemonicParsing="false" onAction="#L9NS" prefHeight="55.0" prefWidth="55.0" text="9">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="L6NS" layoutX="162.0" layoutY="127.0" mnemonicParsing="false" onAction="#L6NS" prefHeight="55.0" prefWidth="55.0" text="6">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="L5NS" layoutX="88.0" layoutY="127.0" mnemonicParsing="false" onAction="#L5NS" prefHeight="55.0" prefWidth="55.0" text="5">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="L4NS" layoutX="13.0" layoutY="127.0" mnemonicParsing="false" onAction="#L4NS" prefHeight="55.0" prefWidth="55.0" text="4">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="L1NS" layoutX="13.0" layoutY="200.0" mnemonicParsing="false" onAction="#L1NS" prefHeight="55.0" prefWidth="55.0" text="1">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="L2NS" layoutX="88.0" layoutY="200.0" mnemonicParsing="false" onAction="#L2NS" prefHeight="55.0" prefWidth="55.0" text="2">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="L3NS" layoutX="162.0" layoutY="200.0" mnemonicParsing="false" onAction="#L3NS" prefHeight="55.0" prefWidth="55.0" text="3">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="L0NS" layoutX="13.0" layoutY="273.0" mnemonicParsing="false" onAction="#L0NS" prefHeight="55.0" prefWidth="131.0" text="0">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="LCNS" layoutX="162.0" layoutY="273.0" mnemonicParsing="false" onAction="#LCNS" prefHeight="55.0" prefWidth="55.0" text="C">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="LDNS" layoutX="309.0" layoutY="127.0" mnemonicParsing="false" onAction="#LDNS" prefHeight="55.0" prefWidth="55.0" text="D">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="LCNS1" layoutX="235.0" layoutY="127.0" mnemonicParsing="false" onAction="#LCNS1" prefHeight="55.0" prefWidth="55.0" text="C">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="LBNS" layoutX="309.0" layoutY="54.0" mnemonicParsing="false" onAction="#LBNS" prefHeight="55.0" prefWidth="55.0" text="B">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="LANS" layoutX="235.0" layoutY="54.0" mnemonicParsing="false" onAction="#LANS" prefHeight="55.0" prefWidth="55.0" text="A">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="LENS" layoutX="236.0" layoutY="200.0" mnemonicParsing="false" onAction="#LENS" prefHeight="55.0" prefWidth="55.0" text="E">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="LFNS" layoutX="310.0" layoutY="200.0" mnemonicParsing="false" onAction="#LFNS" prefHeight="55.0" prefWidth="55.0" text="F">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Label layoutX="6.0" layoutY="4.0" text="Number systems">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
